@@ -1,0 +1,12 @@
+{
+    "name": "CI Distzilla",
+    "description": "Distzilla CI for perl organization",
+    "iconName": "example-icon",
+    "categories": [
+        "Perl"
+    ],
+    "filePatterns": [
+        "dist.ini"
+    ]
+}
+
