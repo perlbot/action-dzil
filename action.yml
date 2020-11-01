@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Get dependencies
         run: |
-          cpanm Perl::PrereqScanner Perl::Critic Perl::Critic::Freenode Dist::Zilla
+          cpanm --verbose Perl::PrereqScanner Perl::Critic Perl::Critic::Freenode Dist::Zilla $EXTRA_DEPS
           dzil authordeps --missing | cpanm
           dzil listdeps --missing --develop --author | cpanm
       - name: Regular tests
